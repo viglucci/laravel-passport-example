@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'laravelpassport' => [
+        'host' => 'http://localhost:8001',
+        'client_id' => env('LARAVELPASSPORT_KEY'),
+        'client_secret' => env('LARAVELPASSPORT_SECRET'),
+        'redirect' => env('LARAVELPASSPORT_REDIRECT_URI')
+    ],
 ];

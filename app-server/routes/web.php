@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('login', 'Auth\LoginController@redirectToProvider')->name('login');
+Route::get('login/oauth/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::post('logout', 'Auth\LogoutController@logout')->name('logout');
