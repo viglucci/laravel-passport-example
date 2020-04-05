@@ -1,5 +1,8 @@
 # laravel-passport-example
-An example application that leverages Laravel Passport as a identity provider, and an example application that interfaces with this identity provider.
+
+This repository contains:
+- An example application that leverages Laravel Passport as a identity provider.
+- An example application that consumes the identity provider via OAuth without a users database.
 
 ## Setup
 
